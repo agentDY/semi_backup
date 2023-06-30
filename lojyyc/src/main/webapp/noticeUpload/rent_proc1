@@ -1,0 +1,28 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 금요일-3월-31-2023   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Procedure RENT_DELAY_PROC
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "TEST"."RENT_DELAY_PROC" 
+IS
+    V_CNT NUMBER;
+    V_SQL VARCHAR2(2000);
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('프로시저 실행');
+    SELECT COUNT(*) INTO V_CNT FROM RENT WHERE ((RENT_RETURN_DATE IS NULL AND RENT_RETURN < SYSDATE) OR (RENT_RETURN_DATE IS NOT NULL AND RENT_RETURN < RENT_RETURN_DATE)) AND
+TO_CHAR(RETURN_PROC) != TO_CHAR(SYSDATE);
+IF V_CNT > 0 THEN 
+    -- 반납일이 늦은 경우의 RENT_DELAY 값에서 1을 뺀 걸로 수정하기
+    V_SQL := 'UPDATE RENT SET RENT_DELAY = RENT_DELAY-1, RETURN_PROC = SYSDATE WHERE (RENT_DELAY IS NOT NULL) AND (RENT_DELAY > 0) AND (TO_CHAR(RETURN_PROC) != TO_CHAR(SYSDATE))';
+    EXECUTE IMMEDIATE V_SQL;
+ELSE 
+    V_SQL := 'UPDATE RENT SET RETURN_PROC = SYSDATE';
+    EXECUTE IMMEDIATE V_SQL;
+END IF;
+    DBMS_OUTPUT.PUT_LINE('프로시저 종료');
+END;
+
+/

@@ -1,0 +1,82 @@
+
+/* userList css*/
+body { margin:0; padding:0; }
+
+#listForm {width:80%; margin:0 auto; text-align:center;}
+div#user_listForm { width:80%; margin:0 auto; text-align:center; }
+.h3, h3 { margin: 20px 0; text-align: center; color: #474747; }
+	
+table#user_listTable, table#user_rentTable { width:100%; border-collapse:inherit; margin:0 auto; text-align:center; }
+	
+#top th, #none_top > th {
+	padding: 10px 0;
+	border-radius: 5px;
+	background: #F5F5F5; 
+	text-align: center;
+	border-color: #ddd;
+	border-width: 1px; 
+	border-right: none;
+	border-left-style: solid; 
+	border-top: solid 3px #03A6A6;
+	font-weight: bold;
+	color:#474747;
+}
+
+#none_top th { border-top: solid 1px #ddd;}
+
+td {font-size:14px;}
+tr#none_bottom { border-bottom:1px solid #ddd; font-size:14px; }
+#user_listCont td, #listCont td{ padding: 5px 0; border-bottom:1px solid #ddd; }
+#none_top > td {border-bottom:none;}
+#none_bottom > td { padding: 5px 0; border-bottom:1px solid #ddd;}
+#listCont1 > td { padding:15px 0; font-size:14px; border-bottom:none;}
+
+div#userSearchBox { width:60%; margin:20px auto; text-align:center; }
+.input-group { flex-direction: row; }
+.custom-control { align-items: center; }
+
+
+#pageList {margin:auto; margin-top:15px; width:500px; text-align:center; color:#474747;}
+
+.form-control {
+	color: #037F8C;
+	height: 60px;
+	margin: 0 2px;
+}
+
+.form-control {
+	color: #037F8C;
+	height: 60px;
+	margin: 0 2px;
+}
+
+.form-control:hover {
+	border: none;
+	background: #037e8c;
+	color: white;
+}
+.form-control:focus {
+	border: none;
+}
+ .form-control:click { 
+ 	border: none; 
+ 	background: #037e8c; 
+ 	color: white; 
+ } 
+.form-control:active {
+	border: none;
+	background: #037e8c;
+	color: white;
+}
+
+#user_listTable button, #rentBookUserId button, #none_bottom button { background-color:#03A6A6; color:white; border-radius:3px; width:70px; height:40px; border:none; }
+#none_bottom button:hover,
+#none_bottom button:focus,
+#user_listTable button:hover, 
+#user_listTable button:focus {
+   background-color: #037F8C!important;
+}
+
+
+
+	

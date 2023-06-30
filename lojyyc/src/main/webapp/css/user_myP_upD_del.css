@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/* update */
+
+.updateH3 {
+	text-align: center;
+	color: #474747;
+}
+
+.form-group table, .group table{
+	width: 100%; 
+	border-collapse: inherit;
+	
+}
+
+.form-group th, .group th {
+	width: 180px;
+	padding: 15px 30px;
+	background: #F5F5F5; 
+	text-align: center;
+	border-width: 1px; 
+	border-left: 3px solid #03A6A6;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+td {
+	padding-left: 10px;
+	border-bottom: 1px solid #ddd; 
+	padding-bottom: 5px;
+}
+
+
+
+.updateBtn {
+	background-color:#03A6A6; 
+	color:white; 
+	width: 85px;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+.updateBtn:hover, .updateBtn:focus {
+	background-color: #037F8C!important;
+}
+
+
+
+div.form-group, div.group {margin-bottom: 0px;}
+
+#commandCell {
+	text-align: center;
+	padding-bottom :50px;
+	padding-top: 20px;
+}
+
+#USER_EMAIL:focus, #USER_TEL:focus, #USER_PW:focus, #USER_PW_RE:focus, #USER_ID:focus, #USER_NAME:focus  {
+	box-shadow: none;
+	outline: none;
+	border: none;
+}
+
+#USER_PW, #USER_EMAIL, #USER_PW_RE, #USER_TEL, #USER_NAME, #USER_ID {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+
+#btnDiv {
+	text-align: center;
+}
+
+#btnDiv button {
+	border-radius:3px;
+}
+
+
+#sample6_postcode {width:150px; border-radius: 3px; margin:3px; border: none; border-bottom:1px solid #ddd; outline: none;}
+#sample6_address {width:100%;  border-radius: 3px; margin:3px; border: none; border-bottom:1px solid #ddd; outline: none;}
+#sample6_detailAddress {width:100%; border-radius: 3px; margin:3px; border: none; border-bottom:1px solid #ddd; outline: none;}
+#sample6_extraAddress {width:100%; border-radius: 3px; margin:3px; border: none; border-bottom:1px solid #ddd; outline: none;}
+#sample6_postcode:focus, #sample6_address:focus, #sample6_detailAddress:focus, #sample6_extraAddress:focus {outline: none;}
+
+
+#commandCell {
+	text-align: center;
+}
+/* 우편번호 */
+.addrTable .addrBtn { 
+/* 	width: 200px; */
+/* 	padding: 4px 0; */
+/* 	text-align: center; */
+/* 	border: none; */
+/* 	background-color: #F5F5F5;	 */
+	background-color:#03A6A6; color:white;  width:130px; 
+	height:35px; border: none; border-radius: 3px;
+}
+.addrTable .addrBtn:hover{
+	background-color: #037F8C;
+}
+
+/* delete */
+
+		.info {
+			font-size: 12px;
+			color: #037F8C;
+		}
+		
+		#delPW:focus{
+			outline: 2px solid #03A6A6;
+			border: none;
+		}
+		
+		input {
+			padding: 5px 150px 5px 10px;
+			border-radius: 3px;
+			border: 2px solid #ddd;
+			
+		}
+		
+		
+		button {
+			padding: 2px 7px;
+			background-color: #03A6A6; 
+			color: white;
+			border: none;
+			height:40px;
+		}
+		
+		.subtn {
+		text-align: center;
+			margin: 20px 0;
+		}
+		
+		.subtn > button:hover, .subtn > button:focus {
+		background-color: #037F8C!important;
+		}
+		
+		.spanDiv span {
+			font-size: 14px;
+			color: #808080;
+			font-weight: bolder;
+		}
+		
+		.spanDiv {
+			margin: 20px 0;
+		}
+		
+		.userDel th {
+			border-spacing: 0 10px;
+			padding: 15px 30px;
+			background: #F5F5F5; 
+			text-align: center;
+			border-width: 1px; 
+			border-right: none;
+			border-top: none;
+			border-left: 3px solid #03A6A6;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		
+		.userDel td {
+			border-bottom: 1px solid #ddd;
+			padding: 20px 0 20px 30px;
+		}
+		
+		.userDel {
+			width: 55%;
+			margin: 0 auto;
+		}
+		
+		table {
+			width: 100%;
+/* 			text-align: center; */
+		}
+		
+		/* myPage */
+		
+		
+	body {margin: 0;}
+	
+	#rentInfo th, #user_info th { 
+		border-spacing: 0 10px;
+		padding: 15px 30px;
+		border-radius: 5px;
+		background: #F5F5F5; 
+		text-align: center;
+		border-width: 1px; 
+		border-right: none;
+		border-top: 3px solid #03A6A6;
+		font-weight: bold;
+	}
+	#rentInfo td {
+		padding: 10px 20px;
+		border-bottom: 1px solid #ddd;
+		font-size:14px;
+	}
+	
+	#user_info td {
+		padding: 10px 20px;
+	}
+	
+	#rentInfo th {
+		border-top: 3px solid #ddd;
+	}
+
+	#rentInfo {
+		width: 80%; 
+		margin: 0 auto; 
+		text-align: center;
+	}
+	
+	.user {
+		width: 80%; 
+		margin: 0 auto; 
+		text-align: center;
+	}
+	
+	#user_info {
+		padding: 20px 0; 
+	}
+	
+	.welcome {
+		text-align : left;
+		font-size: 19px;
+	}
+	
+	.welcome button {
+		background-color: #03A6A6; 
+		color: white;
+	}
+	
+	.welcome button:hover, .welcome button:focus {
+		background-color: #037F8C!important;
+	}
+	
+	.user button {
+		margin: 5px 3px;
+		padding: 2px 7px;
+		float: right;
+		background-color: #03A6A6; 
+		color: white;
+	}
+	
+	.user button:hover {
+		color: white;
+	}
+	
+	.user button:active, .user button:focus {
+		box-shadow: none;
+	}
+	
+	
+	table {
+		margin: 0 auto; 
+/* 		width: 100% */
+	}
+	
+	.form-group .form-control { border:none;}
+	.form-group .form-control:hover { background:#fff; outline:none; border:none; box-shadow:none;}
+	.form-group .form-control:focus { background:#fff; outline:none; border:none; box-shadow:none;}
+	.form-group input { border:none; }
+	
+/* 	.group .form-control { border:none;} */
+	.group .form-control:hover { background:#fff; outline:none; border:none; box-shadow:none; color:#000;}
+	.group .form-control:focus { background:#fff; outline:none; border:none; box-shadow:none; color:#000;}
+	
